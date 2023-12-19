@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zomato</title>
+        <link rel="icon" href="zomato logo.png">
+        <style>
+            #fs1{
+                background-image: url(bg1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #h1{
+                color: #FEFBF6;
+                font-size: 50px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            #h2{
+                color: #FEFBF6;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .image-container {
+                display: flex;
+                display: inline-block;
+                margin-left: 300px;
+                border: 2px solid #000;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+                flex-direction: column; 
+                border-radius: 20px;
+                border-width: 10px;
+                }
+                .image-container a {
+                text-decoration: none;
+                color: #333;
+                }
+            .image-container img {
+                max-width: 100%;
+                 height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .image-container p {
+                margin: 5px 0 0;
+            }
+            .images{
+                display: flex;
+                margin-left: 300px;
+                gap:50px;
+                font-size: 25px;
+            }
+            .images img{
+                max-width: 100%;
+                
+            }
+            .images1{
+                display: flex;
+                margin-left: 300px;
+                gap:50px;
+                font-size: 25px;
+            }
+            .images1 img{
+                max-width: 100%;
+                
+            }
+            .images a{
+                color: black;
+            }
+            .images1 a{
+                color: black;
+            }
+            .restaurant{
+                display: flex;
+                margin-left: 200px;
+                gap:50px;
+                font-size: 25px;
+            }
+            .restaurant img{
+                max-width: 100%;
+                
+            }
+            .restaurant a{
+                color: black;
+            }
+            .restaurants{
+                display: flex;
+                margin-left: 200px;
+                gap:50px;
+                font-size: 25px;
+            }
+            .restaurants img{
+                max-width: 100%;
+                
+            }
+            .restaurants a{
+                color: black;
+            }
+            .explore{
+                text-align: center;
+            }
+            .last{
+                background-color:#EEF0E5 ;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .links {
+            flex: 1 1 100px;
+            margin-right: 10px; 
+            }
+
+            .links-column h4,
+            .links-column ul {
+                margin-bottom: 10px; /* Add spacing between sections */
+            }
+            .social links {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px; /* Adjust the width as needed */
+    margin-top: 10px; /* Adjust the spacing from the columns */
+}
+
+.social links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add spacing between social links */
+}
+
+.social links img {
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+            
+        </style>    
+    </head>
+    <body >
+    <fieldset id="fs1">
+        <a style = "margin-left: 100px; color: #FEFBF6; font-size: 20px; text-decoration: none;"href="http://127.0.0.1:5500/zomatogettheapp.html" target = "_self" >Get the app</a>
+        <a style = "margin-left: 700px;  color: #FEFBF6; font-size: 20px;text-decoration: none;"href="http://127.0.0.1:5500/zomatoinvestor%20relations.html" target = "_self">Investor Relations</a>
+        <a style = "margin-left:50px; color: #FEFBF6; font-size: 20px; text-decoration: none;"href = "http://127.0.0.1:5500/zomatoaddarestaurant.html" target = "_self">Add restaurant</a>
+        <a style = "margin-left:50px; color: #FEFBF6;font-size: 20px;text-decoration: none;"href = "http://127.0.0.1:5500/zomatologin.html" target="_self">Login</a>
+        <a style = "margin-left:50px; color: #FEFBF6; font-size: 20px;text-decoration: none;" href = "http://127.0.0.1:5500/zomatosignup.html" target = "_self">Sign up</a> 
+        <p style="text-align: center; " id="h1"><b>zomato</b></p>
+        <p style="text-align: center; "id="h2"> Discover the best food & drinks in Bengaluru</p>
+        <form action="https://maps.google.com" style="text-align: center;">
+        <input  list="GPS" name = "Place" placeholder="3rd Phase,5th Block,Bangalore" size="30" autocomplete="given-name">
+        <datalist id = "GPS">
+            <option><button><a href = "#">Detect current Location<br>Using GPS </a> </button></option>
+        </datalist>
+        </form> 
+        <br>
+        <form action="http://127.0.0.1:5500/zomatoorderonline.html" style="text-align: center;" >
+        <input type ="text" name = "Search" placeholder = "Search for a restaurant,cuisine or a dish"size = "40" autocomplete="given-name" >
+        </form>
+        <br><br>
+    </fieldset><br/>
+    <center>
+        <div class="image-container"><a href="http://127.0.0.1:5500/zomatoorderonline.html"><img  src="order online.jpg" alt = "order online" controls height = "100px" width = "150px"><h4>Order Online</h4><p>Stay home and order online</p></a></div>
+
+        <div class="image-container"> <a href="http://127.0.0.1:5500/zomatodiningout.html"><img src="dining.jpg" alt = "Dining" controls height = "100px" width = "150px"><h4>Dining</h4><p>View the city's favourite dining venues</p></a></div>
+       
+        
+        <div class="image-container"> <a href="http://127.0.0.1:5500/zomatodiningout.html"><img src="nightlifeandclubs.jpg" alt = "nightlifeandclubs" controls height = "100px" width = "150px"><h4>Nightlife and clubs</h4><p>Explore the city's top nightlife outlets </p></a></div>
+    </center>   
+    <br><br>
+    <h1 style="text-align: center;">Inspiration for your first order</h1><br/>
+    <div class="images" >
+            <a  style = "text-decoration: none; "href="#"><img src="Biryani.jpg" alt = "Biryani"controls height = "100px" width = "100%"><br><h5>Biryani</h5> </a>
+            <a style = "text-decoration: none; " href="#"><img src="pizza.jpg" alt = "Pizza"controls height = "100px" width = "100%"><br><h5>Pizza</h5></a>
+            <a style = "text-decoration: none; "  href="#"><img src="chicken.jpg" alt = "Chicken"controls height = "100px" width = "100%"><br><h5>Chicken</h5> </a>
+            <a style = "text-decoration: none; " href="#"><img src="Thali.jpg" alt = "Thali"controls height = "100px" width = "100%"><br><h5>Thali</h5></a>
+            <a style = "text-decoration: none; " href="#"><img src="Burger.jpg"alt = "Burger" controls height = "100px" width = "100%"><br> <h5>Burger</h5></a>
+            <a style = "text-decoration: none; " href="#"><img src="fried rice.jpg"  alt = "Fried Rice"controls height = "100px" width = "100%"><br><h5>Fried Rice</h5></a>
+        </div>
+   
+    <br>
+    <h1 style = "text-align: center;">Top brands for you</h1><br>
+    <div class = "images1">
+           <a style = "text-decoration: none; " href="#"><img src="mcdonalds.jpg" alt = "Mc Donalds" controls height = "100px" width = "100%"><br><h5>Mc Donald's</h5></a>
+            <a style = "text-decoration: none; " href="#"><img src="dominos.jpg" alt = "Dominos" controls height = "100px" width = "100%"><br> <h5>Domino's Pizza</h5> </a>
+            <a style = "text-decoration: none; "  href="#"><img src="burgerking.png" alt = "Burger King" controls height = "100px" width = "100%"><br><h5>Burger King</h5> </a>
+            <a style = "text-decoration: none; " href="#"><img src="haldirams.png" alt = "Haldirams" controls height = "100px" width = "100%"><br><h5>Haldiram's</h5></a>
+            <a style = "text-decoration: none; " href="#"><img src="kfc.png" alt = "KFC" controls height = "100px" width = "100%"><br><h5>KFC</h5> </a> 
+            <a style = "text-decoration: none; " href="#"><img src="bikenervala.jpg" alt = "Bikenervala" controls height = "100px" width = "100%"><br><h5>Bikanervala</h5></a> 
+        </div>
+    <br>
+    <h1 style="text-align: center;">Order food online in restaurants</h1>
+    <div class = "restaurant">
+        <a style = "text-decoration: none; " href="#"><img src="kfcfood.jpg" alt = "kfc" controls height = "100px" width = "100%"><br><pre>KFC         4.1+</pre><p>Burger,Fast food,Biriyani.....200/- for one</p></a>
+        <a style = "text-decoration: none; " href="#"><img src="mcdonaldsfood.jpg" alt = "mcdonalds" controls height = "100px" width = "100%"><br> <pre>MC Donald's       4.4+</pre><p>Burger,wraps,Fast food...150/- for one</p> </a>
+        <a style = "text-decoration: none; " href="#"><img src="sarvanabhavan.jpg" alt = "Dominos" controls height = "100px" width = "100%"><br> <pre>Sarvanabhavan        4.2+</pre><p>South Indian ,Desserts,Juice ....200/-for one</p> </a>
+    </div>    
+    <div class = "restaurants"  > 
+        <a  style = "text-decoration: none; " href="#"><img src="pizzahutfood.jpg" alt = "Dominos" controls height = "100px" width = "100%"><br> <pre>Pizza Hut      3.9+</pre><p>Pizza Hut,fast food,Italian......200/- for one</p> </a>
+        <a style = "text-decoration: none; " href="#"><img src="yellowbowlfood.jpg" alt = "Dominos" controls height = "100px" width = "100%"><br> <pre>The Yellow Bowl     4.2+</pre><p>Chinese,North Indian....200/- for one</p> </a>
+        <a style = "text-decoration: none; " href="#"><img src="rajadhanifood.jpg" alt = "Dominos" controls height = "100px" width = "100%"><br><pre>Rajadhani Restaurant    3.4+</pre><p>North Indian,Fast food.....200/- for one</p></a>
+</div>
+                
+           
+    
+        <h1 style="text-align: center;">Collections</h1><br/>
+        <h2>Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends &nbsp;&nbsp; <a style = "text-decoration: none;"href="https://www.zomato.com/bangalore/collections">All collections in Bengaluru</a></h2>
+       
+        <button><a style = "text-decoration: none; " href="#"><img src="newlyopenedrestaurants.jpg" alt = "nor"controls height = "150px" width = "100%" > Opened Restaurants</a></button>
+        <button><a style = "text-decoration: none; "href="#"><img src="screenrooftopplaces.jpg" alt = "srp" controls height = "150px" width = "100%">Screen Rooftop Places</a></button>
+        <button><a  style = "text-decoration: none; "href="#"><img src="trendingrest.jpg" alt = "tr"controls height = "150px" width = "100%"> Trending Restaurants</a></button>
+        <button><a style = "text-decoration: none; " href="#"><img src="must visit.jpg" alt = "mv"controls height = "150px" width = "100%"">Must-visit Legendary Places</a></button>
+        
+    
+    <fieldset>
+        <h2>Popular localities in and around Bengaluru</h2>
+            <form >
+                <input type ="text"  name = "Indiranagar" placeholder = "Indiranagar"size = "20" autocomplete="given-name">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type ="text" name = "Maratahalli" placeholder = "Marathahalli"size = "20" autocomplete="given-name">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type ="text" name = "Whitefield" placeholder = "Whitefield"size = "20" autocomplete="given-name">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br>
+                <input type ="text"  name = "HSR"placeholder = "HSR"size = "20" autocomplete="given-name">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type ="text" name = "Jayanagar" placeholder = "Jayanagar"size = "20" autocomplete="given-name">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type ="text" name = "JP" placeholder = "JP Nagar"size = "20" autocomplete="given-name" >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </form>
+    </fieldset>
+    <fieldset style="background-color: aliceblue;">
+        <center>
+            <img src="mobile.png" alt = "mob"controls height = "200px" width = "15%">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <fieldset>
+                <center>
+                <h1>Get the Zomato app</h1>
+                <h3>We will send you a link,open it on your phone to download th app</h3>
+                <fieldset >
+                <form >
+                    <input type="radio" id="email1" name="email" autocomplete="given-name" >
+                    <label for="email1">Email</label>
+                    <input type="radio" id="phone" name ="phone" autocomplete="given-name" >
+                    <label for="phone">Phone</label>  
+                        <h4>Email</h4>
+                        <p>Please enter your email id</p>
+                        <input type = "email" id="email" required pattern = "[a-z0-9_.]+@[a-z]+.[a-z]{2,}" placeholder="Email" size = "30" autocomplete="given-name">
+                       <h4>Phone Number</h4>
+                       <p>Please enter your Phone Number</p>
+                        <input type ="text" name ="phone1" value ="+91" placeholder="phone" required pattern = "[6-9]{1}[0-9]{9}" autocomplete="given-name"><br><br>
+                        <input type="submit" name = "share app" value="Share App Link" autocomplete="given-name">
+                    </form>
+                    </fieldset>        
+                
+                <h2>Download app from</h2>
+                <a href=""><img src="appstore.png" alt="App Store icon" controls height = "75px" width = "25%"></a>
+                <a href=""><img src="googleplaystoreicon.png" alt="Google Play Store icon" controls height = "100px" width = "25%"></a>
+                </center>
+            </fieldset>
+        </center>
+    </fieldset>
+    <br>
+    <div class="explore">
+        <center>
+            <h1>Explore options near me</h1>
+        </center>
+        <details>
+            <summary>Popular cuisines near me</summary>
+            <ul>
+                <li><a style = "text-decoration: none; " href= "#">Beverages food near me</a></li>
+                <li><a style = "text-decoration: none; " href="#">Biriyani food near me</a></li>
+                <li><a style = "text-decoration: none; " href = "#">Burger food near me</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary>Popular restaurant types near me</summary>
+            <ul>
+                <li><a style = "text-decoration: none; " href = "#">Bakeries near me</a></li>
+                <li><a style = "text-decoration: none; " href  = "#">Bars near me</a></li>
+                <li><a style = "text-decoration: none; " href = "">Beverage shop near me</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary>Top Restaurant Chains</summary>
+            <ul>
+                <li><a  style = "text-decoration: none; " href = "#">Biriyani Blues</a></li>
+                <li><a style = "text-decoration: none; " href = "#">Domino's</a></li>
+                <li><a style = "text-decoration: none; " href = "#">KFC</a></li>
+                <li><a style = "text-decoration: none; " href = "#">Burger King</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary>Cities We Deliver To</summary>
+            <ul>
+            <li><a style = "text-decoration: none; " href = "#">Hyderabad</a></li>
+            <li><a style = "text-decoration: none; "  href = "#">Kolkata</a></li>
+            <li><a style = "text-decoration: none; " href = "#">Mumbai</a></li>
+            <li><a style = "text-decoration: none; " href = "#">Bengaluru</a></li>
+            <li><a style = "text-decoration: none; " href = "#">Pune</a></li>
+        </ul>
+        </details>
+    </div>
+    <br>
+    <div class="last">
+        <div class="links">
+        <h2>zomato</h2>
+        <h4>ABOUT ZOMATO</h4>
+        <ul>
+            <li><a style = "text-decoration: none; " href="#">Who We Are</a></li>
+            <li><a style = "text-decoration: none; " href="#">Blog</a></li>
+            <li><a style = "text-decoration: none; " href="#">Work With Us</a></li>
+            <li><a style = "text-decoration: none; " href="#">Investor Relations</a></li>
+            <li><a style = "text-decoration: none; " href="#">Report fraud</a></li>
+            <li><a style = "text-decoration: none; " href="#">Press Kit</a></li>
+            <li><a style = "text-decoration: none; " href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="links">
+        <h4>ZOMAVERSE</h4>
+        <ul>
+            <a style = "text-decoration: none; " href="#">Zomato</a><br>
+            <a style = "text-decoration: none; " href="#">Blinkit</a><br>
+            <a style = "text-decoration: none; " href="#">Feeding India</a><br>
+            <a style = "text-decoration: none; " href="#">Hyperpure</a><br>
+            <a style = "text-decoration: none; " href="#">Zomaland</a><br>
+        </ul>
+    </div>
+    <div class="links">
+        <h4>FOR RESTAURANTS</h4>
+        <ul>
+            <a style = "text-decoration: none; " href="#">Partner with us</a><br>
+            <a style = "text-decoration: none; " href="#">Apps for you</a><br>
+        </ul>
+    </div>
+        <div class="links">
+        <h4>FOR ENTERPRISES</h4>
+        <ul>
+            <a style = "text-decoration: none; " href="#">Zomato For Enterprise</a><br>
+        </ul>
+    </div>
+        <div class="links">
+        <h4>LEARN MORE</h4>
+        <ul>
+            <a style = "text-decoration: none; " href="#">Privacy</a><br>
+            <a style = "text-decoration: none; " href="#">Security</a><br>
+            <a style = "text-decoration: none; " href="#">Terms</a><br>
+            <a style = "text-decoration: none; " href="#">Sitemap</a><br>
+        </ul>
+    </div>
+        <div class="social links">
+        <h2>Social Links</h2>
+        <ul class="social-links">
+            <a style = "text-decoration: none; " href="https://www.linkedin.com/company/zomato/?originalSubdomain=in"><img src="linkedin.png" alt="Social Media Icon" controls height = "50" width ="50">linkedin</a><br>
+            <a style = "text-decoration: none; " href="https://www.instagram.com/zomato/"><img src="instalogo.png" alt="Social Media Icon" controls height = "50" width ="50">Instagram</a><br>
+            <a style = "text-decoration: none; " href="https://twitter.com/i/flow/login?redirect_after_login=%2Fzomato"><img src="twitterlogo.png" alt="Social Media Icon" controls height = "50" width ="50">twitter</a><br>
+            <a style = "text-decoration: none; " href="https://www.youtube.com/zomato"><img src="Youtubelogo.png" alt="Social Media Icon" controls height = "50" width ="50" >youtube</a><br>
+            <a style = "text-decoration: none; " href="https://www.facebook.com/zomato"><img src="facebooklogo.png" alt="Social Media Icon" controls height = "50" width ="50">facebook</a><br><br>
+            <a style = "text-decoration: none; " href="https://play.google.com/store/apps/details?id=com.application.zomato&_branch_match_id=1259839476104511294&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT8pL1ssp0U%2FJL8%2FLyU9M0a3STcxLKcrPTAEABp6kzyEAAAA%3D"><img src="googleplaystoreicon.png" alt="Social Media Icon" controls height="40px" width = "20%">Play Store</a><br>
+            <a style = "text-decoration: none; " href="https://bnc.lt/download-zomato-ios"><img src="appstore.png" alt="Social Media Icon" controls height="40px" width = "20%">App Store</a>
+        </ul>
+    </div>
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+   
+    </div>
+    </body>
+</html>
